@@ -1,0 +1,19 @@
+
+
+.header{
+    min-height: 10vh;
+    max-height:20vh;
+    display: flex;
+    width:100vw;
+    background:#f3f0f0;
+    text-align: center;
+    justify-content: space-evenly;
+    text-align: left;
+
+    align-items: center;
+    border-bottom: 2px solid grey;
+}
+.header > div{
+    margin-left:1em;
+    flex-grow: 1;
+}
