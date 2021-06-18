@@ -4,9 +4,12 @@ import { useState } from "react";
 import Request from "../utils/request";
 import globalUrl from "../config/globalUrl";
 import SearchShower from "../components/SearchResult";
+
 export default function Home(){
   const [searchField , setSearch ] = useState('')
   const [result, setResult ] = useState([]);
+  // const history = createBrowserHistory();
+
   const showResult = (value)=>{
     setSearch(value);
     if(value == ""){
@@ -20,7 +23,7 @@ export default function Home(){
       setResult(res)
     })
   }
-  return(
+  return (
     <>
     <Layout>
       <div>
